@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bai 7</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    result ='';
+    for (let i = 0; i < 10; i++) {
+        let inText = prompt(`nhap phan tu thu ${i + 1}`);
+        if (inText !== "") {
+            inText.toLowerCase();
+            arr.push(inText);
+        }
+    }
+    let check = prompt('nhap phan tu can xoa');
+    let lowCheck = check.toLowerCase();
+    const index = arr.indexOf(lowCheck);
+    if (index !== -1) {
+        for (let i = index; i < arr.length - 1; i++) {
+            arr[i] = arr[i + 1];
+        }
+        arr[arr.length - 1] = '';
+        document.write(`mang sau khi xoa ${lowCheck} : ${arr}`);
+    }else {
+        document.write(`${lowCheck} khong co trong mang`);
+    }
+</script>
+</body>
+</html>

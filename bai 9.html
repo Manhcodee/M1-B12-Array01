@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 9</title>
+</head>
+<body>
+<script>
+    let arrA = [];
+    let arrB = [];
+    let arrC = [];
+    result = '';
+    let size = parseInt(prompt('nhap so luong phan tu trong mang'))
+    for (let i = 0; i < size; i++) {
+        let inNumberA = parseInt(prompt(`so phan tu A thu ${i + 1}`));
+        if (!isNaN(inNumberA)) {
+            arrA.push(inNumberA);
+        }
+    }
+    for (let j = 0; j < size; j++) {
+        let inNumberB = parseInt(prompt(`nhap phan tu B thu ${j + 1}`));
+        if (!isNaN(inNumberB)) {
+            arrB.push(inNumberB);
+        }
+    }
+
+    result = arrC.concat(arrA, arrB);
+    document.write(`mang C: ${result}`);
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 8</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    result = '';
+    for (let i = 0; i < 10; i++) {
+        let inNumber = parseFloat(prompt(`nhap so thu ${i + 1}`));
+        if (!isNaN(inNumber)) {
+            arr.push(inNumber);
+        }
+    }
+    result = arr.sort((a,b) => b - a);
+
+    document.write(`mảng sau khi sắp xếp từ lớn đến bé là: ${result}`);
+</script>
+</body>
+</html>

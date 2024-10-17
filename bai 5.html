@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+<script>
+  // let arr = [];
+  // let numBus = 0;
+  // let size = parseFloat(prompt('nhap so mang'));
+  // for (let i = 0; i < size; i++) {
+  //   let number = parseFloat(prompt(`nhap so thu ${i + 1}`));
+  //   if (!isNaN(number)) {
+  //     arr.push(number);
+  //     if (number < 0) {
+  //       numBus ++;
+  //     }
+  //   }
+  // }
+  // document.write(`co ${numBus} so nguyen am`);
+
+  let str = prompt('nhap day so: ');
+  let words = str.split(/\s+/);
+  count = 0;
+  for (let i = 0; i < words.length; i++) {
+    let numbers = parseInt(words[i]);
+    if (!isNaN(numbers) && numbers < 0) {
+      count ++;
+    }
+  }
+  document.write(`co ${count} so nguyen am`);
+</script>
+</body>
+</html>

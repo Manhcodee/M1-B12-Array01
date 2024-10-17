@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let max = 0;
+
+    for (let i = 0; i < 10; i++) {
+        let inNumber = prompt(`Nhập phần tử thứ: ${i + 1}`); // Using prompt for user input
+        let num = parseFloat(inNumber);
+        if (!isNaN(num)) {
+            arr.push(num);
+            if (num > max) {
+                max = num;
+            }
+        }
+    }
+
+    alert(`Số lớn nhất là: ${max}`);
+</script>
+</body>
+</html>

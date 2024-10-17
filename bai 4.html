@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 4</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let size = parseFloat(prompt('nhap so luong mang'));
+    for (let i = 0; i < size; i++) {
+        let numbers = parseFloat(prompt(`nhap so thu ${i + 1}`));
+        if (!isNaN(numbers)) {
+            arr.push(numbers);
+        }
+    }
+    document.write(`mang ban dau la: ${arr}, mang bi dang nguoc la: ${arr.reverse()}`);
+
+</script>
+</body>
+</html>

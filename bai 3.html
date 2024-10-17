@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bai 3</title>
+</head>
+<body>
+<script>
+
+//hien thi
+    let arr = [];
+    let size = parseFloat(prompt('nhap so luong mang'));
+    let max = 0;
+    for (let i = 0; i < size; i++) {
+      let number = parseFloat(prompt(`nhap so thu ${i + 1}`));
+      if (!isNaN(number)) {
+        arr.push(number);
+        if(number > max) {
+          max = number;
+        }
+      }
+    }
+
+ // tinh tong
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+      sum += arr[i]
+    }
+
+  let tb = sum / arr.length;
+  document.write(`max = ${max}, tong = ${sum}, tb = ${tb}`);
+
+</script>
+</body>
+</html>
